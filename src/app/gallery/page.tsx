@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ShoppingBag, ChevronDown, ChevronUp } from "lucide-react";
 import { galleryOutfits, outfitData } from "@/lib/outfitData";
