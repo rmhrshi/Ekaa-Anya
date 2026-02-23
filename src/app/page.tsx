@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+
 import {
   Palette, Shirt, Star, ShoppingBag, Calendar, Zap,
   ChevronRight, Quote, Sparkles
