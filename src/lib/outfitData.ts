@@ -123,7 +123,8 @@ export const outfitData: OutfitData[] = [
   },
 ];
 
-export function getOutfit(gender: string, occasion: string, skinTone: string): OutfitData {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function getOutfit(gender: string, occasion: string, _skinTone: string): OutfitData {
   // Try to match gender + occasion
   const genderMatch = outfitData.filter(o => o.gender.toLowerCase() === gender.toLowerCase());
   if (genderMatch.length > 0) {
