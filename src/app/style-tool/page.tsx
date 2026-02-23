@@ -471,6 +471,7 @@ export default function StyleToolPage() {
                 </div>
               ) : (
                 <div className="relative h-52 rounded-2xl overflow-hidden group">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={photoURL} alt="Uploaded" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-green-500 flex items-center justify-center">
