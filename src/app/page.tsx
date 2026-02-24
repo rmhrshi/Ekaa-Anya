@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import GeminiChat from "@/components/GeminiChat";
 
 import {
   Palette, Shirt, Star, ShoppingBag, Calendar, Zap,
@@ -202,7 +203,8 @@ export default function HomePage() {
         </div>
 
         {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 fade-up" style={{ animationDelay: "1.4s" }}>
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 fade-up" style={{ animationDelay: "1.4s" }}>
+          
           <span className="text-xs text-muted-foreground tracking-widest uppercase">Scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-[#C9956A] to-transparent" />
         </div>
@@ -412,9 +414,10 @@ export default function HomePage() {
               <Link key={l.href} href={l.href} className="hover:text-[#C9956A] transition-colors">{l.label}</Link>
             ))}
           </nav>
-          <span>Made with AI ✦ 2025</span>
+          <span>Crafted with ❤️</span>
         </div>
       </footer>
+      <GeminiChat />
     </main>
   );
 }
